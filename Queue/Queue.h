@@ -14,11 +14,13 @@ public:
 	bool operator == (const TQueue<T>& qu) const;
     bool operator != (const TQueue<T>& qu) const;
 	int GetSize() { return Size; }
+	int GetMaxSize() { return MaxSize; }
 	bool Empty() const;
 	bool Full() const;
 	void Push(const T elem);
 	T SeeHead() const;
 	T GetHead();
+	T GetNumberHead() { return head; }
 };
 template<class T>
 TQueue<T>::TQueue(int s)
