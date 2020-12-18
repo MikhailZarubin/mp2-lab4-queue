@@ -177,7 +177,7 @@ TEST(Queue, taking_an_element_from_the_queue_reduces_its_size_by_one)
     EXPECT_EQ(elem, a);
     EXPECT_EQ(size - 1, q.GetSize());
 }
-TEST(Stack, cant_take_an_element_from_an_empty_stack)
+TEST(Queue, cant_take_an_element_from_an_empty_queue)
 {
     TQueue<int> q(5);
     ASSERT_ANY_THROW(q.GetHead());
